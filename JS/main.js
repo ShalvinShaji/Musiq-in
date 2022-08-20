@@ -39,7 +39,7 @@ let play = document.querySelector('#play');
 let next = document.querySelector('#next');
 let title = document.querySelector('#title');
 let artist = document.querySelector('#artist');
-let recent_volume= document.querySelector('#volume');
+let recent_volume= document.querySelector('#volume_c');
 let slider = document.querySelector('#duration_slider');
 
 
@@ -49,6 +49,8 @@ let slider = document.querySelector('#duration_slider');
 let timer;
 let index_no = 0;
 let Playing_song = false;
+let muted = false;
+
 
 //create a audio Element
 let track = document.createElement('audio');
@@ -105,15 +107,66 @@ function load_track(index_no){
 load_track(index_no);
 
 
+
+
+
+
+
+
 //mute sound function
 function mute_sound(){
-	track.volume = 0;
   
+  if (muted==false){
+    mute__track();
+  }
+  else if (muted==true){
+    unmute_track();
+  }
+
+}
+
+function mute__track(){
+  track.volume=0;
+  volume__active.innerHTML='<i class="bx bx-volume-mute"></i>'
+  muted=true;
+}
+
+function unmute_track(){
+ 
+ muted=false;
+ volume__active.innerHTML='<i class="bx bx-volume-full"></i>'
+ track.volume = recent_volume.value / 100;
 }
 // change volume
 function volume_change(){
 	track.volume = recent_volume.value / 100;
+  volume__active.innerHTML='<i class="bx bx-volume-full"></i>'
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // checking.. the song is playing or not
