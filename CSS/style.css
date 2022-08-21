@@ -376,9 +376,11 @@ input[type="range"]::-webkit-slider-thumb{
 
     .slide-content{
         margin: 0 40px;
+        padding: 25px 20px;
+        overflow: hidden;
     }
     .card{
-        width: 200px;
+        
         border-radius: 25px;
         background-color: var(--white-color); 
     }
