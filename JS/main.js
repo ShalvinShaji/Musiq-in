@@ -26,7 +26,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 //SWIPER
 
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 25,
   
   loop: true,
@@ -44,85 +44,25 @@ var swiper = new Swiper(".slide-content", {
   },
 
 
-  breakpoints:{
-    0:{
-      slidesPerView: 1,
+  breakpoints: {
+  
+    320: {
+     slidesPerView: 2,
+     spaceBetween: 20
     },
-    520:{
-      slidesPerView: 2,
+    // when window width is >= 480px
+    480: {
+     slidesPerView: 3,
+     spaceBetween: 30
     },
-    950:{
-      slidesPerView: 3,
-    },
-  },
-
-
-
+    // when window width is >= 640px
+    640: {
+     slidesPerView: 5,
+     spaceBetween: 40
+    }
+   }
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -153,9 +93,9 @@ let track = document.createElement('audio');
 
 let Songs = [
   {
-    name: "Kurumbathi chundari nee",
-    path: "./Songs/Malayalam/m1.mp3",
-    singer: "vineeth sreenivasan"
+    name: "Naan un azhaginile",
+    path: "./Songs/t1.mp3",
+    singer: "Arjit singh, Chinmayi sreepadha"
   },
   {
     name: "Uyiril thodum",
