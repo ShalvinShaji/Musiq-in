@@ -367,12 +367,18 @@ input[type="range"]::-webkit-slider-thumb{
         
         
     }
+    .slide-container{
+        max-width: 1120px;
+        width: 100%;
+        background-color: green;
+        padding:40px 0;
+    }
 
     .slide-content{
         margin: 0 40px;
     }
     .card{
-        /* width: 320px; */
+        width: 200px;
         border-radius: 25px;
         background-color: var(--white-color); 
     }
@@ -386,7 +392,7 @@ input[type="range"]::-webkit-slider-thumb{
         row-gap: 5px;
     } */
 
-    .overlay{
+    /* .overlay{
         position: relative;
         height: 100%;
         width: 100%;
@@ -394,7 +400,7 @@ input[type="range"]::-webkit-slider-thumb{
         border-radius: 50%;
         left: 0;
         top: 0;
-    }
+    } */
     .card-image{
         position: relative;
         height: 150px;

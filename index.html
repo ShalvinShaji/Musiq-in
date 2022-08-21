@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musico 2.0</title>
     <link rel="stylesheet" href="./CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css">
     <!-- =====BOX ICONS===== -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -40,11 +41,16 @@
         <!--===== HOME =====-->
         <section class="home" id="home">
             <div class="home__container bd-grid">
+
+
+
                 <div class="malayalam">
-                    <div class="slide-container">
+
+
+                    <div class="slide-container swiper">
                         <div class="slide-content">
-                            <div class="card-wrapper">
-                                <div class="card">
+                            <div class="card-wrapper swiper-wrapper">
+                                <div class="card swiper-slide">
                                     <div class="image-content">
                                         <span class="overlay">
                                             <div class="card-image">
@@ -63,8 +69,14 @@
                             </div>
                         </div>
 
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+
                     </div>
-            </div>
+                </div>
+
+
                 <div>
                     <h1>hellllllooo</h1>
                 </div>
@@ -102,7 +114,7 @@
 
 
 
-               <!-- <div class="meadia__player">
+               <div class="meadia__player">
                     <div class="volume">
                         <div class="volume_icon">
                              <button onclick="mute_sound()" id="volume__active"><i class='bx bx-volume-full'></i></button>
@@ -132,7 +144,7 @@
                         <p id="title"></p>
                         <p id="artist"></p>
                     </div>
-                </div> -->
+                </div>
 
           
     
@@ -140,6 +152,11 @@
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!--===== SWIPER JS =====-->
+    <script src="./JS/swiper-bundle.min.js"></script>
+
 
     <!--===== MAIN JS =====-->
     <script src="./JS/main.js"></script>
