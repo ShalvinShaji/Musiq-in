@@ -37,7 +37,7 @@ let slider = document.querySelector('#duration_slider');
 
 
 let timer;
-let index_no;
+var index_no;
 let Playing_song = false;
 let muted = false;
 
@@ -97,7 +97,7 @@ let Songs = [
   },
   {
     name: "Dheere Dheere",
-    path: "./Songs/dheeredheere.mp3",
+    path: "./Songs/dheeredhere.mp3",
     singer: "Yo Yo Honey Singh"
   },
   {
@@ -114,20 +114,22 @@ let Songs = [
 
 ];
 
-function Startplay(index)
+function Startplay(index_n)
 {
-  var index_n=index;
+  
   clearInterval(timer);
 	reset_slider();
 	track.src = Songs[index_n].path;
 	title.innerHTML = Songs[index_n].name;	
   artist.innerHTML = Songs[index_n].singer;
-  track.load();
+  
 	timer = setInterval(range_slider ,1000);
-  track.play();
-  Playing_song = true;
-  play.innerHTML = '<i class="bx bx-pause-circle"></i>';
+  playsong();
+  
+  
 }
+
+
 
 
 
@@ -141,10 +143,7 @@ function justplay(){
   }
 }
 
-//reset slider
-function reset_slider(){
-  slider.value = 0;
-}
+
 
 //play song
 function playsong(){
@@ -162,47 +161,52 @@ function pausesong(){
  
  
  // next song
- function next_song(){
-  if(Playing_song == true){
-  if(index_no < Songs.length - 1){
-    index_no += 1;
-    Startplay(index_no);
-    playsong();
-  }else{
-    index_no = 0;
-    Startplay(index_no);
-    playsong();
+//  function next_song(){
+//   if(Playing_song == true){
+//     if(index_no < Songs.length - 1){
+//       index_no += 1;
+//       Startplay(index_no);
+//     playsong(index_no);
+//   }else{
+//     index_no = 0;
+//     Startplay(index_no);
+//     playsong();
  
-  }
- }
- else{
-  track.pause();
- }
-}
+//   }
+//  }
+//  else{
+//   track.pause();
+//  }
+// }
  
  
  // previous song
- function previous_song(){
-  if(Playing_song == true){
-  if(index_no > 0){
-    index_no -= 1;
-    Startplay(index_no);
-    playsong();
+//  function previous_song(){
+//   if(Playing_song == true){
+//   if(index_no > 0){
+//     index_no -= 1;
+//     Startplay(index_no);
+//     playsong();
  
-  }else{
-    index_no = Songs.length;
-    Startplay(index_no);
-    playsong();
-  }
- }
- else{
-  track.pause();
- }
-}
+//   }else{
+//     index_no = Songs.length;
+//     Startplay(index_no);
+//     playsong();
+//   }
+//  }
+//  else{
+//   track.pause();
+//  }
+// }
 
- 
- 
- 
+
+
+
+
+//reset slider
+function reset_slider(){
+  slider.value = 0;
+}
  
  // change slider position 
  function change_duration(){
@@ -225,16 +229,19 @@ function pausesong(){
        
        // function will run when the song is over
        if(track.ended){
-           if(index_no < Songs.length - 1){
-            index_no += 1;
-            Startplay(index_no);
-            playsong();
-          }else{
-            index_no = 0;
-            Startplay(index_no);
-            playsong();
+
+        play.innerHTML = '<i class="bx bx-play-circle"></i>';
+
+          //  if(index_no < Songs.length - 1){
+          //   index_no += 1;
+          //   Startplay(index_no);
+          //   playsong();
+          // }else{
+          //   index_no = 0;
+          //   Startplay(index_no);
+          //   playsong();
         
-          }
+          // }
            
            }
       }

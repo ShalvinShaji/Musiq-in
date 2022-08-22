@@ -231,33 +231,19 @@
                         <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume_c">
                     </div>
                     <div class="player">
-
-
                         <div class="controls">
-                            <button onclick="previous_song()" id="pre"><i class='bx bxs-left-arrow'></i></button>
+                            <!-- <button onclick="previous_song()" id="pre"><i class='bx bxs-left-arrow'></i></button> -->
                             <button onclick="justplay()" id="play"><i class='bx bx-play-circle'></i></button>
-                            <button onclick="next_song()" id="next"><i class='bx bxs-right-arrow'></i></button>
+                            <!-- <button onclick="next_song()" id="next"><i class='bx bxs-right-arrow'></i></button> -->
 
                         </div>
-
-
-                        <div class="duration">
-                            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
-                        </div>
-
-                        
+                        <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()" class="duration">   
                     </div>
                     <div class="artist__name">
                         <p id="title">Song name</p>
                         <p id="artist">Artist name</p>
                     </div>
                 </div>
-
-
-
-
-
-
             </div> 
         </section>    
 

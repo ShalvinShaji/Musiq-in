@@ -152,8 +152,8 @@ nav{
 }
 .card-image{
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     padding: 2px;
 }
@@ -167,7 +167,7 @@ nav{
 
 .name{
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 300;
     color: rgb(255, 255, 255);
 }
 .singer{
@@ -220,9 +220,8 @@ nav{
 
 .btn{
     border: none;
-    font-size: 16px;
     color: var(--white-color);
-    padding: 8px 16px;
+    padding: 6px 10px;
     background-color: crimson;
     border-radius: 20px;
     margin: 14px;
@@ -286,35 +285,32 @@ nav{
 }
 
 .meadia__player .player{
-    display: grid;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
     
-}
-.meadia__player .controls{
-    display: flex;
+    align-items:center;
     justify-content: center;
-    align-items: center;
-}
-.meadia__player .controls button{
-    border: none;
-    margin-left: var(--mb-3);
-    height: 3rem;
-    width: 3rem;
-    font-size: 1.5rem;
-    border-radius: 50%;	
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    outline: none;
-    transition: 0.5s;
-    background-color: crimson;
-    color: white
+    color: crimson;
+
+    
 }
 
-.meadia__player #duration_slider{
-    
-    align-content: center;
+.meadia__player .controls button{
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    margin-right: var(--mb-2);
+    border-radius: 50%;
+    padding: .6rem .5rem;
+    background: crimson;
+    color: white;  
 }
+
+
+
 
 .meadia__player .artist__name{
     color: rgb(255, 255, 255);
@@ -323,7 +319,7 @@ nav{
 }
 .meadia__player .duration input[type="range"] {
     -webkit-appearance: none;
-    width: 100%;
+    width: 150%;
     outline: none;
     height: 2px;
  
