@@ -58,12 +58,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin: var(--header-height) 0 0 0;
+    
     font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    color: var(--text-color);
-    line-height: 1.6;
+    
     
 }
 
@@ -74,7 +71,7 @@ img{
 }
 ::selection {
     color: #1f1f1f;
-    background: var(--first-color);
+    background: crimson;
   }
 
 
@@ -117,7 +114,6 @@ nav{
 .slide-container{
     max-width: auto;
     width: 100%;
-   
     /* padding:10px 0; */
 }
 
@@ -166,12 +162,12 @@ nav{
 }
 
 .name{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     color: rgb(255, 255, 255);
 }
 .singer{
-    font-size: 13px;
+    font-size: 11px;
     text-align: center;
     color: var(--white-color);
 }
@@ -255,16 +251,19 @@ nav{
 
 /*===== MEDIA PLAYER =====*/
 
-
+.media__control{
+    background-color: #191919;
+    margin: var(--mb-2);
+    border-radius: 20px;
+}
 .meadia__player{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    background-color: #191919;
     height: 100px;
     width: auto;    
 }
 .meadia__player .volume{
-    width: 100%;
+    width: 50%;
     font-size: 20px;
     display: flex;
     align-items:center;
@@ -278,6 +277,7 @@ nav{
     height: 40px;
     width: 40px;
     margin-right: var(--mb-2);
+    margin-left: var(--mb-4);
     border-radius: 50%;
     padding: .6rem .5rem;
     background: crimson;
@@ -316,22 +316,23 @@ nav{
     color: rgb(255, 255, 255);
     justify-self: center;
     text-align: center;
+    font-size: 13px;
+    
+    
 }
-.meadia__player .duration input[type="range"] {
-    -webkit-appearance: none;
-    width: 150%;
-    outline: none;
-    height: 2px;
- 
-}
+
 
 input[type="range"] {
     -webkit-appearance: none;
-    width: 50%;
+    width: 500%;
     outline: none;
     height: 2px;
+    cursor: pointer;
   
 }
+
+
+
 input[type="range"]::-webkit-slider-thumb{
     -webkit-appearance: none;
     height: 1rem;
@@ -340,6 +341,61 @@ input[type="range"]::-webkit-slider-thumb{
     border-radius: 90%;
     cursor: pointer;
 }
+
+/*===== MEDIA QUERY'S =====*/
+
+
+@media only screen and (max-width: 600px)
+ {
+    .name {
+        font-size: 12px;
+    }
+   .singer{
+    font-size: 10px;
+   }
+   .btn{
+    font-size: 10px;
+    font-weight: 100;
+    margin: 8px;
+   }
+   
+   .meadia__player .artist__name{
+    font-size: 11px;
+    margin-top: 20px;
+    }
+
+   
+}
+
+
+
+
+@media only screen and (max-width: 1023px){
+    .volume_icon, #voloume_c{
+        display: none;
+    }
+    .meadia__player .volume input[type="range"] {  
+    display: none;
+    }
+
+    .meadia__player{
+        grid-template-columns: 2fr;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px; 
+    }
+    .name {
+        font-size: 12px;
+    }
+    .singer{
+    font-size: 10px;
+    }
+    .meadia__player .artist__name{
+    font-size: 14px;
+    }
+
+}
+
 
 
    

@@ -309,13 +309,17 @@ var swiper = new Swiper(".slide-content", {
   breakpoints: {
   
     // when window width is >= 560px
-    560: {
-     slidesPerView: 1,
+    // 400: {
+    //  slidesPerView: 2,
+    //  spaceBetween: 30
+    // },
+    492: {
+     slidesPerView: 3,
      spaceBetween: 30
     },
     // when window width is >= 640px
-    640: {
-     slidesPerView: 3,
+    768: {
+     slidesPerView: 4,
      spaceBetween: 20
     },
     1100: {
