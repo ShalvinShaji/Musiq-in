@@ -21,48 +21,6 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//SWIPER
-
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 1,
-  spaceBetween: 25,
-  
-  loop: true,
-  centerSlide:'true',
-  fade:'true',
-  grabCursor:'true',
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-
-  breakpoints: {
-  
-    320: {
-     slidesPerView: 2,
-     spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-     slidesPerView: 3,
-     spaceBetween: 30
-    },
-    // when window width is >= 640px
-    640: {
-     slidesPerView: 5,
-     spaceBetween: 40
-    }
-   }
-
-});
 
 
 
@@ -94,29 +52,64 @@ let track = document.createElement('audio');
 let Songs = [
   {
     name: "Naan un azhaginile",
-    path: "./Songs/t1.mp3",
+    path: "./Songs/naanun.mp3",
     singer: "Arjit singh, Chinmayi sreepadha"
   },
   {
+    name: "Kesariya",
+    path: "./Songs/kesariya.mp3",
+    singer: "Arjit singh"
+  },
+  {
+    name: "Neeye",
+    path: "./Songs/neeye.mp3",
+    singer: "Yazin Nizar, Sharanya Srinivas"
+  },
+  {
+    name: "Madhupole peytha mazhaye",
+    path: "./Songs/madhupole.mp3",
+    singer: "Sid sriram, Aishwarya Ravichandran"
+  },
+  {
+    name: "Duniya",
+    path: "./Songs/duniya.mp3",
+    singer: "Akhil Pasreja, Dhvani Bhanushali"
+  },
+  {
     name: "Uyiril thodum",
-    path: "./Songs/Malayalam/m2.mp3",
-    singer: "vineeth sreenivasan"
+    path: "./Songs/uyiril.mp3",
+    singer: "Sooraj Santhosh, Anne Amie"
   },
   {
-    name: "Mizhyil",
-    path: "./Songs/Malayalam/m3.mp3",
-    singer: "Shahabaz aman"
+    name: "Pavizha mazhaye",
+    path: "./Songs/pavizhamazhaye.mp3",
+    singer: "K.S.Harisankar"
   },
   {
-    name: "Minunundae Mullapolae",
-    path: "./Songs/Malayalam/m4.mp3",
-    singer: "Karthik"
+    name: "Mizhiyil",
+    path: "./Songs/mizhiyil.mp3",
+    singer: "Shahabaz Aman"
   },
   {
-    name: "Lailakame",
-    path: "./Songs/Malayalam/m5.mp3",
-    singer: "Haricharan"
-  }
+    name: "Galliyan",
+    path: "./Songs/galliyan.mp3",
+    singer: "Ankit Tiwari"
+  },
+  {
+    name: "Dheere Dheere",
+    path: "./Songs/dheeredheere.mp3",
+    singer: "Yo Yo Honey Singh"
+  },
+  {
+    name: "Tum hi ho",
+    path: "./Songs/tumhiho.mp3",
+    singer: "Arjit singh"
+  },
+  {
+    name: "Pinnenthe",
+    path: "./Songs/pinnenthe.mp3",
+    singer: "K.S.Harisankar"
+  },
 
 
 ];
@@ -282,3 +275,46 @@ function volume_change(){
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//SWIPER
+
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 1,
+  spaceBetween: 25,
+  
+  loop: true,
+  centerSlide:'true',
+  fade:'true',
+  grabCursor:'true',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+
+  breakpoints: {
+  
+    // when window width is >= 560px
+    560: {
+     slidesPerView: 1,
+     spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+     slidesPerView: 3,
+     spaceBetween: 20
+    },
+    1100: {
+     slidesPerView: 5,
+     spaceBetween: 20
+    }
+   }
+
+});

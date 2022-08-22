@@ -177,8 +177,46 @@ nav{
 }
 
 .one{
-    background-image: url('../../img/t1.jpg'); 
+    background-image: url('../../img/Albummcoversblured/naanunblur.jpg');  
+     
 }
+.two{
+    background-image: url('../../img/Albummcoversblured/kesariyablur.jpg');  
+
+}
+.three{
+    background-image: url('../../img/Albummcoversblured/neeyeblur.jpg');   
+}
+.four{
+    background-image: url('../../img/Albummcoversblured/madhupoleblur.jpg');   
+}
+.five{
+    background-image: url('../../img/Albummcoversblured/duniyablur.jpg');   
+}
+.six{
+    background-image: url('../../img/Albummcoversblured/uyirilblur.jpg');   
+}
+.seven{
+    background-image: url('../../img/Albummcoversblured/pavizhablur.jpg');   
+    
+}
+.eight{
+    background-image: url('../../img/Albummcoversblured/mizhiyilblur.jpg');   
+}
+.nine{
+    background-image: url('../../img/Albummcoversblured/galliyanblur.jpg');   
+}
+.ten{
+    background-image: url('../../img/Albummcoversblured/dheeredheereblur.jpg'); 
+}
+.eleven{
+    background-image: url('../../img/Albummcoversblured/tumhihoblur.jpg');   
+}
+.twelve{
+    background-image: url('../../img/Albummcoversblured/pinnentheblur.jpg');   
+}
+
+
 
 .btn{
     border: none;
