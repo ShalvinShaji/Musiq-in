@@ -313,17 +313,14 @@ var swiper = new Swiper(".slide-content", {
     //  slidesPerView: 2,
     //  spaceBetween: 30
     // },
-    492: {
-     slidesPerView: 3,
+    600: {
+     slidesPerView: 2,
      spaceBetween: 30
     },
     // when window width is >= 640px
-    768: {
-     slidesPerView: 4,
-     spaceBetween: 20
-    },
+   
     1100: {
-     slidesPerView: 5,
+     slidesPerView: 4,
      spaceBetween: 20
     }
    }

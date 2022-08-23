@@ -19,15 +19,20 @@
         <section class="home" id="home">
             <div class="home__container ">
 
-                <nav>
-                    <div>
-                        <h1></h1>
+                <nav class="nav_bar">
+                    <div class="nav_logo">
+                        <h3>Musico</h3>
                     </div>
-                    <div>
-                        <h1></h>
-                    </div>
+                    <ul >
+                        <li class="nav_items">HOME</li>
+                        <li class="nav_items">MALAYALAM</li>
+                        <li class="nav_items">HINDI</li>
+                        <li class="nav_items">TAMIL</li>
+                        <li class="nav_items">ENGLISH</li>
+                    </ul>
 
                 </nav>
+                
                 
                     <div class="slide-container swiper">
                         <div class="slide-content">
@@ -221,31 +226,34 @@
                     
                 </div>
 
-            <div class="media__control">
-                <div class="meadia__player">
-                    <div class="volume">
-                        <div class="volume_icon">
-                             <button onclick="mute_sound()" id="volume__active"><i class='bx bx-volume-full'></i></button>
-                                   
+                <div class="media__control">
+                    <div class="meadia__player">
+                        <div class="volume">
+                            <div class="volume_icon">
+                                <button onclick="mute_sound()" id="volume__active"><i class='bx bx-volume-full'></i></button>
+                                    
+                            </div>
+                            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume_c">
                         </div>
-                        <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume_c">
-                    </div>
-                    <div class="player">
-                        <div class="controls">
-                            <!-- <button onclick="previous_song()" id="pre"><i class='bx bxs-left-arrow'></i></button> -->
-                            <button onclick="justplay()" id="play"><i class='bx bx-play-circle'></i></button>
-                            <!-- <button onclick="next_song()" id="next"><i class='bx bxs-right-arrow'></i></button> -->
+                        <div class="player">
+                            <div class="controls">
+                                <!-- <button onclick="previous_song()" id="pre"><i class='bx bxs-left-arrow'></i></button> -->
+                                <button onclick="justplay()" id="play"><i class='bx bx-play-circle'></i></button>
+                                <!-- <button onclick="next_song()" id="next"><i class='bx bxs-right-arrow'></i></button> -->
 
+                            </div>
+                            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()" class="duration">   
                         </div>
-                        <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()" class="duration">   
+                        <div class="artist__name">
+                            <p id="title"></p>
+                            <p id="artist"></p>
+                        </div>
                     </div>
-                    <div class="artist__name">
-                        <p id="title"></p>
-                        <p id="artist"></p>
-                    </div>
-            </div>
 
-            </div>
+                </div>
+                <div class="copyright">
+                    <small>Copyright<i class='bx bx-copyright'></i> Shalvin - All rights reserved. </small>
+                </div>
             </div> 
         </section>    
 
