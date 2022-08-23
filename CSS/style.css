@@ -9,10 +9,9 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color: #00ee10;
-    --white-color: #FAFAFF;
+    
     --dark-color: #222222;
-    --text-color: #000000;
+    
 }
 
 /*===== Fuente y tipografia =====*/
@@ -108,12 +107,13 @@ nav{
     grid-template-rows: 1fr 2fr 1fr 50px;
 }
 .copyright{
-   
+    position: fixed;
+    bottom: 17px;
     display: flex;
     color: rgb(101, 101, 101);
     justify-self: center;
     align-self: flex-end;
-    margin-bottom: 20px;
+    
 }
 nav{
     margin-bottom: 40px;
