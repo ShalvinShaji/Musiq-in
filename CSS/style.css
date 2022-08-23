@@ -111,9 +111,8 @@ nav{
     bottom: 17px;
     display: flex;
     color: rgb(101, 101, 101);
+    text-align: center;
     justify-self: center;
-    align-self: flex-end;
-    
 }
 nav{
     margin-bottom: 40px;
@@ -125,6 +124,7 @@ nav{
     list-style-type: none;
     display: flex;
     align-items: center;
+    color: white;
     
 }
 .nav_items{
@@ -135,6 +135,7 @@ nav{
 .nav_logo{
     position: relative;
     left: 0;
+    color: white;
     
 }
 
@@ -206,7 +207,7 @@ nav{
 .singer{
     font-size: 14px;
     text-align: center;
-    color: var(--white-color);
+    color: white;
 }
 
 .one{
@@ -253,7 +254,7 @@ nav{
 
 
 .btn{
-    border: 1px solid var(--white-color);
+    border: 1px solid white;
     color: white;
     padding: 6px 10px; 
     border-radius: 20px;
@@ -263,9 +264,9 @@ nav{
 }
 
 .btn:hover{
-    background:rgb(255, 255, 255) ;
-    color: crimson;
-    
+   
+    border: 1px solid white;
+    color: white;
 
 }
 
