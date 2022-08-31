@@ -55,6 +55,7 @@
 }
 html{
     scroll-behavior: smooth;
+    height: 100vh;
 }
 body{
     
@@ -389,11 +390,12 @@ input[type="range"]::-webkit-slider-thumb{
 /*===== MEDIA QUERY'S =====*/
 
 
-@media only screen and (max-width: 600px)
+@media screen and (max-width: 600px)
  {
 
     .home__container{
         grid-template-rows: 100px 450px 200px 50px;
+        height: 600px;
     }
     .name {
         font-size: 16px;
@@ -406,13 +408,21 @@ input[type="range"]::-webkit-slider-thumb{
     font-weight: 100;
     margin: 8px;
    }
+   .copyright{
+    position: fixed;
+    bottom: 17px;
+    display: flex;
+    color: rgb(101, 101, 101);
+    text-align: center;
+    margin-left: 10rem;
+}
    
    
    
 }
 
 
-@media only screen and (max-width: 1023px){
+@media screen and (max-width: 1023px){
     .volume_icon, #voloume_c{
         display: none;
     }
