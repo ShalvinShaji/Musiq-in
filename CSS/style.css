@@ -92,11 +92,11 @@ img{
 
 body{
     margin: 0;
-    background-color: var(--dark-color);
+    background-color: rgb(14, 12, 12);
 }
 nav{
     display: flex;
-    background-image: linear-gradient(rgb(221, 38, 38), rgb(102, 0, 0));
+    background-image: linear-gradient(rgb(38, 38, 38), rgb(26, 24, 24));
     color: var(--white-color);
     text-align: center;
     justify-content: center;
