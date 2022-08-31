@@ -123,6 +123,7 @@ function Startplay(index_n)
 	title.innerHTML = Songs[index_n].name;	
   artist.innerHTML = Songs[index_n].singer;
   
+  
 	timer = setInterval(range_slider ,1000);
   playsong();
   

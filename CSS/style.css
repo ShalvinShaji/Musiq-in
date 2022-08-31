@@ -55,11 +55,12 @@
 }
 html{
     scroll-behavior: smooth;
-    height: 100vh;
+    
 }
 body{
     
     font-family: var(--body-font);
+    
  
     
     
@@ -95,7 +96,7 @@ body{
 }
 nav{
     display: flex;
-    
+    background-image: linear-gradient(rgb(221, 38, 38), rgb(102, 0, 0));
     color: var(--white-color);
     text-align: center;
     justify-content: center;
