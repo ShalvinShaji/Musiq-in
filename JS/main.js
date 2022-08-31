@@ -51,64 +51,64 @@ let track = document.createElement('audio');
 
 let Songs = [
   {
-    name: "Naan un azhaginile",
-    path: "./Songs/naanun.mp3",
-    singer: "Arjit singh, Chinmayi sreepadha"
+    name: "Let Me Love You",
+    path: "./Songs/letmelove.mp3",
+    singer: "D J Snake, Justin Bieber"
   },
   {
-    name: "Kesariya",
-    path: "./Songs/kesariya.mp3",
-    singer: "Arjit singh"
+    name: "No Lie",
+    path: "./Songs/nolie.mp3",
+    singer: "Sean Paul, Dua Lipa"
   },
   {
-    name: "Neeye",
-    path: "./Songs/neeye.mp3",
-    singer: "Yazin Nizar, Sharanya Srinivas"
+    name: "Takeaway",
+    path: "./Songs/illenium.mp3",
+    singer: "Illenium, The Chainsmokers, Lennon Stella"
   },
   {
-    name: "Madhupole peytha mazhaye",
-    path: "./Songs/madhupole.mp3",
-    singer: "Sid sriram, Aishwarya Ravichandran"
+    name: "24K Magic",
+    path: "./Songs/24kmagic.mp3",
+    singer: "Bruno Mars"
   },
   {
-    name: "Duniya",
-    path: "./Songs/duniya.mp3",
-    singer: "Akhil Pasreja, Dhvani Bhanushali"
+    name: "1, 2, 3",
+    path: "./Songs/123.mp3",
+    singer: "Sofia Reyes, Jason Derulo, De La Ghetto"
   },
   {
-    name: "Uyiril thodum",
-    path: "./Songs/uyiril.mp3",
-    singer: "Sooraj Santhosh, Anne Amie"
+    name: "Cheap Thrills",
+    path: "./Songs/cheapthrills.mp3",
+    singer: "Sia"
   },
   {
-    name: "Pavizha mazhaye",
-    path: "./Songs/pavizhamazhaye.mp3",
-    singer: "K.S.Harisankar"
+    name: "Yummy",
+    path: "./Songs/yummy.mp3",
+    singer: "Justin Bieber"
   },
   {
-    name: "Mizhiyil",
-    path: "./Songs/mizhiyil.mp3",
-    singer: "Shahabaz Aman"
+    name: "Better",
+    path: "./Songs/better.mp3",
+    singer: "Khalid"
   },
   {
-    name: "Galliyan",
-    path: "./Songs/galliyan.mp3",
-    singer: "Ankit Tiwari"
+    name: "Sorry",
+    path: "./Songs/sorry.mp3",
+    singer: "Justin Bieber"
   },
   {
-    name: "Dheere Dheere",
-    path: "./Songs/dheeredhere.mp3",
-    singer: "Yo Yo Honey Singh"
+    name: "Hate me",
+    path: "./Songs/hateme.mp3",
+    singer: "Ellie Goulding, Juice WRLD"
   },
   {
-    name: "Tum hi ho",
-    path: "./Songs/tumhiho.mp3",
-    singer: "Arjit singh"
+    name: "Señorita",
+    path: "./Songs/senorita.mp3",
+    singer: "Camila Cabello, Shawn Mendes"
   },
   {
-    name: "Pinnenthe",
-    path: "./Songs/pinnenthe.mp3",
-    singer: "K.S.Harisankar"
+    name: "The Box",
+    path: "./Songs/box.mp3",
+    singer: "Roddy Ricch"
   },
 
 

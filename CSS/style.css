@@ -59,7 +59,7 @@ html{
 body{
     
     font-family: var(--body-font);
-    background-image: linear-gradient(rgb(27, 27, 27), rgb(0, 0, 0));
+ 
     
     
 }
@@ -94,7 +94,7 @@ body{
 }
 nav{
     display: flex;
-    background-image: linear-gradient( rgb(83, 0, 0),crimson);
+    
     color: var(--white-color);
     text-align: center;
     justify-content: center;
@@ -212,44 +212,44 @@ nav{
 }
 
 .one{
-    background-image: linear-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(119, 85, 5), rgb(46, 9, 47));
      
 }
 .two{
-    background-image: linear-gradient(rgb(126, 69, 69), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(181, 0, 0), rgb(28, 4, 148));
 
 }
 .three{
-    background-image: linear-gradient(rgb(170, 26, 26), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(140, 140, 140),rgb(181, 0, 141) );
 }
 .four{
-    background-image: linear-gradient(rgb(17, 203, 33), rgb(0, 0, 0));  
+    background-image: linear-gradient(rgb(255, 255, 166),rgb(241, 0, 0));  
 }
 .five{
-    background-image: url('../../img/Albummcoversblured/duniyablur.jpg');   
+    background-image: linear-gradient(rgb(255, 120, 120),rgb(0, 166, 72));   
 }
 .six{
-    background-image: url('../../img/Albummcoversblured/uyirilblur.jpg');   
+    background-image: linear-gradient(rgb(220, 255, 140),rgb(50, 50, 50));  
 }
 .seven{
-    background-image: url('../../img/Albummcoversblured/pavizhablur.jpg');   
+    background-image: linear-gradient(rgb(220, 255, 140),rgb(210, 0, 151));  
     
 }
 .eight{
-    background-image: url('../../img/Albummcoversblured/mizhiyilblur.jpg');   
+    background-image: linear-gradient(rgb(24, 24, 24),rgb(164, 0, 189));    
 }
 .nine{
-    background-image: url('../../img/Albummcoversblured/galliyanblur.jpg');   
+    background-image: linear-gradient(rgb(174, 174, 174),rgb(0, 0, 0));  
 }
 .ten{
-    background-image: url('../../img/Albummcoversblured/dheeredheereblur.jpg');
+    background-image: linear-gradient(rgb(17, 17, 17),rgb(89, 0, 0));  
     
 }
 .eleven{
-    background-image: url('../../img/Albummcoversblured/tumhihoblur.jpg');   
+    background-image: linear-gradient(rgb(220, 255, 140),rgb(42, 0, 181));    
 }
 .twelve{
-    background-image: url('../../img/Albummcoversblured/pinnentheblur.jpg');   
+    background-image: linear-gradient(rgb(78, 78, 78),rgb(0, 0, 0));  
 }
 
 
