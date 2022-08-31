@@ -59,6 +59,7 @@ html{
 body{
     
     font-family: var(--body-font);
+    background-image: linear-gradient(rgb(27, 27, 27), rgb(0, 0, 0));
     
     
 }
@@ -93,7 +94,7 @@ body{
 }
 nav{
     display: flex;
-    background-color: crimson;
+    background-image: linear-gradient( rgb(83, 0, 0),crimson);
     color: var(--white-color);
     text-align: center;
     justify-content: center;
@@ -211,18 +212,18 @@ nav{
 }
 
 .one{
-    background-image: url('../../img/Albummcoversblured/naanunblur.jpg');  
+    background-image: linear-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
      
 }
 .two{
-    background-image: url('../../img/Albummcoversblured/kesariyablur.jpg');  
+    background-image: linear-gradient(rgb(126, 69, 69), rgb(0, 0, 0));
 
 }
 .three{
-    background-image: url('../../img/Albummcoversblured/neeyeblur.jpg');   
+    background-image: linear-gradient(rgb(170, 26, 26), rgb(0, 0, 0));
 }
 .four{
-    background-image: url('../../img/Albummcoversblured/madhupoleblur.jpg');   
+    background-image: linear-gradient(rgb(17, 203, 33), rgb(0, 0, 0));  
 }
 .five{
     background-image: url('../../img/Albummcoversblured/duniyablur.jpg');   
@@ -292,7 +293,7 @@ nav{
 /*===== MEDIA PLAYER =====*/
 
 .media__control{
-    background-color: #191919;
+    background-image: linear-gradient(rgb(27, 27, 27), rgb(0, 0, 0));
     margin: var(--mb-2);
     border-radius: 20px;
     position: relative;
