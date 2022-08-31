@@ -395,7 +395,7 @@ input[type="range"]::-webkit-slider-thumb{
  {
 
     .home__container{
-        grid-template-rows: 100px 450px 200px 50px;
+        grid-template-rows: 241px 400px 336px;
         height: 600px;
     }
     .name {
