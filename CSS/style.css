@@ -284,11 +284,11 @@ nav{
     transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-    color: #212020;
+    color: #757575;
 }
 .swiper-navBtn::before,.swiper-navBtn::after{
     font-size: 40px;
-    color:#212020;
+    color:#818181;
     
 }
 .swiper-button-next{
