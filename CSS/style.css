@@ -1,5 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 
 /*===== VARIABLES CSS =====*/
 :root{
@@ -72,9 +74,10 @@ img{
     display: block;
 }
 ::selection {
-    color: #1f1f1f;
-    background: crimson;
-  }
+    color: #ffffff;
+    background: rgb(175, 52, 205);
+}
+
 
 
 
@@ -92,11 +95,11 @@ img{
 
 body{
     margin: 0;
-    background-image: linear-gradient(rgb(60, 60, 60), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(197, 197, 197), rgb(191, 188, 188), rgb(39, 39, 39));
 }
 nav{
     display: flex;
-    background-image: linear-gradient(rgb(60, 60, 60), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(97, 97, 97), rgb(57, 57, 57));
     color: var(--white-color);
     text-align: center;
     justify-content: center;
@@ -114,12 +117,12 @@ nav{
     position: fixed;
     bottom: 17px;
     display: flex;
-    color: rgb(148, 148, 148);
+    color: rgb(255, 255, 255);
     text-align: center;
     justify-self: center;
 }
 nav{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     display: flex;
    
     
@@ -130,16 +133,19 @@ nav{
     align-items: center;
     color: white;
     
+    
 }
 .nav_items{
     padding-left: 20px;
     cursor: pointer;
+    
     
 }
 .nav_logo{
     position: relative;
     left: 0;
     color: white;
+    font-family: 'Dancing Script', cursive;
     
 }
 
@@ -215,7 +221,7 @@ nav{
 }
 
 .one{
-    background-image: linear-gradient(rgb(119, 85, 5), rgb(46, 9, 47));
+    background-image: linear-gradient(rgb(205, 201, 201), rgb(32, 59, 57));
      
 }
 .two{
@@ -278,11 +284,11 @@ nav{
     transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-    color: rgb(63, 63, 63); 
+    color: rgb(220, 20, 217);
 }
 .swiper-navBtn::before,.swiper-navBtn::after{
     font-size: 40px;
-    color: rgb(200, 200, 200); 
+    color:rgb(220, 20, 217);
     
 }
 .swiper-button-next{
@@ -296,7 +302,8 @@ nav{
 /*===== MEDIA PLAYER =====*/
 
 .media__control{
-    background-image: linear-gradient(rgb(60, 60, 60), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(69, 69, 69), #212020);
+    
     margin: var(--mb-2);
     border-radius: 20px;
     position: relative;
@@ -315,7 +322,7 @@ nav{
     display: flex;
     align-items:center;
     justify-content: center;
-    color: rgb(63, 63, 63); 
+    color: #7d1492; 
 }
 .meadia__player .volume button{
     border: none;
@@ -328,7 +335,7 @@ nav{
     border-radius: 50%;
     padding: .6rem .5rem;
     background-color:white ; 
-    color: rgb(63, 63, 63);  
+    color: #212020;  
 }
 
 .meadia__player .player{
@@ -338,7 +345,7 @@ nav{
     
     align-items:center;
     justify-content: center;
-    color: rgb(63, 63, 63);  
+    color: #212020;  
 
     
 }
@@ -353,7 +360,7 @@ nav{
     border-radius: 50%;
     padding: .6rem .5rem;
     background-color:white ; 
-    color: rgb(63, 63, 63);  
+    color: #212020;  
 }
 
 
@@ -395,8 +402,11 @@ input[type="range"]::-webkit-slider-thumb{
 @media screen and (max-width: 600px)
  {
 
-    .nav{
-        margin-bottom: 0;
+    body{
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+    }
+    nav{
+        margin-bottom: -8px !important;
     }
     .home__container{
         grid-template-rows: 100px 422px 100px 50px !important;
@@ -416,7 +426,6 @@ input[type="range"]::-webkit-slider-thumb{
     padding: 15px;
     padding-top: 0;
     display: flex;
-    color: rgb(148, 148, 148);
     text-align: center;
     
     
