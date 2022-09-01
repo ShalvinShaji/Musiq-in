@@ -303,7 +303,6 @@ nav{
 
 .media__control{
     background-image: linear-gradient(rgb(69, 69, 69), #212020);
-    
     margin: var(--mb-2);
     border-radius: 20px;
     position: relative;
