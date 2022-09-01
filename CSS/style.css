@@ -395,6 +395,9 @@ input[type="range"]::-webkit-slider-thumb{
 @media screen and (max-width: 600px)
  {
 
+    .nav{
+        margin-bottom: 0;
+    }
     .home__container{
         grid-template-rows: .4fr 2fr 1fr 50px !important;
     }
@@ -410,12 +413,12 @@ input[type="range"]::-webkit-slider-thumb{
     margin: 8px;
    }
    .copyright{
-    position: fixed;
-    margin-top: 70px;
-    bottom: 17px;
+    padding: 15px;
+    padding-top: 0;
     display: flex;
     color: rgb(148, 148, 148);
     text-align: center;
+    
     
 }
    
