@@ -110,7 +110,6 @@ let Songs = [
     path: "./Songs/box.mp3",
     singer: "Roddy Ricch"
   },
-
 ];
 
 function Startplay(index_n)
