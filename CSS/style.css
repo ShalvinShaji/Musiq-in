@@ -92,11 +92,11 @@ img{
 
 body{
     margin: 0;
-    background-color: rgb(14, 12, 12);
+    background-image: linear-gradient(rgb(60, 60, 60), rgb(0, 0, 0));
 }
 nav{
     display: flex;
-    background-image: linear-gradient(rgb(38, 38, 38), rgb(50, 50, 50));
+    background-image: linear-gradient(rgb(60, 60, 60), rgb(0, 0, 0));
     color: var(--white-color);
     text-align: center;
     justify-content: center;
@@ -108,7 +108,7 @@ nav{
     display: grid;
     align-items: center;
     grid-template-rows: 1fr 2fr 1fr 50px;
-    background-image: linear-gradient(rgb(245, 245, 245), rgb(32, 32, 32));
+    
 }
 .copyright{
     position: fixed;
@@ -278,11 +278,11 @@ nav{
     transition: color 0.3s ease;
 }
 .swiper-navBtn:hover{
-    color: crimson;
+    color: rgb(63, 63, 63); 
 }
 .swiper-navBtn::before,.swiper-navBtn::after{
     font-size: 40px;
-    color:crimson;
+    color: rgb(200, 200, 200); 
     
 }
 .swiper-button-next{
@@ -296,7 +296,7 @@ nav{
 /*===== MEDIA PLAYER =====*/
 
 .media__control{
-    background-image: linear-gradient(rgb(27, 27, 27), rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(60, 60, 60), rgb(0, 0, 0));
     margin: var(--mb-2);
     border-radius: 20px;
     position: relative;
@@ -315,7 +315,7 @@ nav{
     display: flex;
     align-items:center;
     justify-content: center;
-    color: crimson;
+    color: rgb(63, 63, 63); 
 }
 .meadia__player .volume button{
     border: none;
@@ -327,8 +327,8 @@ nav{
     margin-left: var(--mb-4);
     border-radius: 50%;
     padding: .6rem .5rem;
-    background: crimson;
-    color: white;  
+    background-color:white ; 
+    color: rgb(63, 63, 63);  
 }
 
 .meadia__player .player{
@@ -338,7 +338,7 @@ nav{
     
     align-items:center;
     justify-content: center;
-    color: crimson;
+    color: rgb(63, 63, 63);  
 
     
 }
@@ -352,8 +352,8 @@ nav{
     margin-right: var(--mb-2);
     border-radius: 50%;
     padding: .6rem .5rem;
-    background: crimson;
-    color: white;  
+    background-color:white ; 
+    color: rgb(63, 63, 63);  
 }
 
 
@@ -384,7 +384,7 @@ input[type="range"]::-webkit-slider-thumb{
     -webkit-appearance: none;
     height: 1rem;
     width: 1rem;
-    background: crimson;
+    background: rgb(255, 255, 255);
     border-radius: 90%;
     cursor: pointer;
 }
@@ -395,6 +395,9 @@ input[type="range"]::-webkit-slider-thumb{
 @media screen and (max-width: 600px)
  {
 
+    .home__container{
+        grid-template-rows: .5fr 2fr 1fr 50px !important;
+    }
     .name {
         font-size: 16px;
     }
@@ -408,9 +411,10 @@ input[type="range"]::-webkit-slider-thumb{
    }
    .copyright{
     position: fixed;
+    margin-top: 70px;
     bottom: 17px;
     display: flex;
-    color: rgb(255, 255, 255);
+    color: rgb(148, 148, 148);
     text-align: center;
     
 }
